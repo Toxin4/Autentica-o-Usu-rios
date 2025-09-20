@@ -1,31 +1,31 @@
 # Autenticação de Usuários - Desing Patterns e Clean Code
 ### *Vinicius da Silva Gomes - 2010424 | Miguel Guarnetti - 1999154*
 ----
-## 🖥 Instruções para Execução
+## 🤔 Instruções para Execução
 1. Instale o **XAMPP** (Caso não tenha instalado)
 2. Execute o **XAMPP** e inicie o **APACHE**
 3. Copie o projeto para a pasta 'htdocs' do XAMPP - *Exemplo:* C:\xampp\htdocs
 4. Acesse no navegador: (http://localhost/carrinho)
 ----
-## ⚙ Funcionalidades Implementadas
+## 💡 Funcionalidades
 -  
 - 
 - 
 - 
 - 
 ----
-## 📊 Regras de Negócio
+## 📈 Regras de Negócio
 - 
 - 
 - 
 - 
 ----
-## 🛑 Limitações
+## ⛔ Limitações
 - 
 - 
 - 
 ----
-## 🚧 Casos de Uso
+## 🧮 Casos de Uso
 **Caso 1 - Cadastro válido** 
 - Entrada: nome Maria Oliveira, email maria@email.com, senha Senha123.
 - Resultado esperado: usuário cadastrado com sucesso.
