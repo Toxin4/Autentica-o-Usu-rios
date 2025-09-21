@@ -8,11 +8,10 @@
 4. Acesse no navegador: (http://localhost/carrinho)
 ----
 ## 💡 Funcionalidades
--  
-- 
-- 
-- 
-- 
+- Cadastro de usuários
+- Verificação de cadastro
+- Cadastro verificando e não permitindo emails inválidos
+- Login com verificação de email não permitindo duplicatas
 ----
 ## 📈 Regras de Negócio
 - 
