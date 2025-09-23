@@ -14,15 +14,33 @@
 - Login com verificação de email não permitindo duplicatas
 ----
 ## 📈 Regras de Negócio
-- 
-- 
-- 
-- 
+**Cadastro de Usuário**
+- Um usuário deve possuir obrigatoriamente:
+  - Nome completo.
+  - Email válido e único no sistema.
+  - Senha que atenda aos critérios de segurança.
+- O email deve ser validado com formato correto (nome@dominio.com).
+- A senha deve conter:
+  - Mínimo de 8 caracteres.
+  - Pelo menos 1 letra maiúscula, 1 minúscula e 1 número.
+**Login**
+- O login só é permitido se:
+  - O email existe no sistema.
+  - A senha fornecida corresponde exatamente à senha cadastrada.
+**Validação de Dados**
+- Nenhum campo pode estar vazio no cadastro ou login.
+- Emails duplicados não são permitidos.
+**Gerenciamento de Usuários**
+- Responsável por autenticar usuários.
+- Deve utilizar o Validator para validar entradas antes de qualquer ação.
+- Não pode autenticar diretamente sem passar pela validação.
+- Projeto foca apenas em cadastro simples, validação e login.
 ----
 ## ⚠️ Limitações
-- 
-- 
-- 
+- Atualmente não existe banco de dados.
+- Usuários e credenciais podem estar definidos em memória.
+- Os dados não são salvos permanentemente.
+- Não existe sistema de sessões (o login não é persistido entre páginas).  
 ----
 ## 🧮 Casos de Uso
 **Caso 1 - Cadastro válido** 
