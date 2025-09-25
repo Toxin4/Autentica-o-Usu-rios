@@ -1,39 +1,31 @@
 <?php
 
-namespace src\User;
+class User {
+    private $id;
+    private $name;
+    private $email;
+    private $password;
 
-class User
-{
-  private int $id;
-  private string $name;
-  private string $email;
-  private string $password;
+    public function __construct($id, $name, $email, $password) {
+        $this->id = $id;
+        $this->name = $name;
+        $this->email = $email;
+        $this->password = password_hash($password, PASSWORD_DEFAULT);
+    }
 
-  public function __construct(int $id, string $name, string $email, string $password)
-  {
-    $this->id = $id;
-    $this->name = $name;
-    $this->email = $email;
-    $this->password = $password;
-  }
+    public function getId() {
+        return $this->id;
+    }
 
-  public function getId(): int
-  {
-    return $this->id;
-  }
+    public function getEmail() {
+        return $this->email;
+    }
 
-  public function getName(): string
-  {
-    return $this->name;
-  }
+    public function verifyPassword($password) {
+        return password_verify($password, $this->password);
+    }
 
-  public function getEmail(): string
-  {
-    return $this->email;
-  }
-
-  public function getPassword(): string
-  {
-    return $this->password;
-  }
+    public function setPassword($newPassword) {
+        $this->password = password_hash($newPassword, PASSWORD_DEFAULT);
+    }
 }
